@@ -25,9 +25,18 @@ public class Main {
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             if (year >= 1584) {
                 System.out.println(year + " год является високосным");
-            }
-        } else {
+            }} else {
             System.out.println(year + " год не является високосным.");
+        }
+        System.out.println("Task 4");
+        int deliveryDistance = 95;
+        int minDeliveryTime = 1;
+        if (deliveryDistance <= 100 && deliveryDistance <=20) {
+            System.out.println("Доставка будет произведена в течении " + minDeliveryTime + " суток.");
+        } else if (deliveryDistance <= 100 && deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Доставка будет произведена в течении " + minDeliveryTime*2 + " суток.");
+        } else if (deliveryDistance <= 100 && deliveryDistance > 60) {
+            System.out.println("Доставка будет произведена в течении " + minDeliveryTime*3 + " суток.");
         }
     }
 }
